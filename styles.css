@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#images {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    /* cubra todo o espaço da imagem em relação ao .item, 34%*/
+    object-fit: cover;
+}
+
+#items {
+    display: flex;
+    /*Scroll vai para a imagem*/
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    /* Para funcionar em alguns dispositivos*/
+    -webkit-overflow-scrolling: touch;
+}
+
+.item {
+    flex: none;
+    width: 50%;
+    height: 400px;
+
+    scroll-snap-align: center;
+
+    /*Desativas as opções do mouse */
+    pointer-events: none;
+}
