@@ -1,6 +1,6 @@
 ﻿# Carrossel-de-Imagens
  
- #Feito HTML, CSS, e JS
+ #Feito com HTML, CSS, e JS
  
  #Carrossel de imagens, cuja rolagem se consiste na horizontal
  
